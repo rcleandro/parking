@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey_light"
+        android:orientation="vertical"
+        tools:context=".ui.main.PlaceholderFragment">
+
+        <RelativeLayout
+            android:id="@+id/fragmentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tab_layout"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/section_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/plate_number"
+                android:textSize="16sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                tools:layout_constraintLeft_creator="1"
+                tools:layout_constraintTop_creator="1" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/editTextLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/section_label"
+                android:layout_marginTop="5dp"
+                app:boxBackgroundMode="outline"
+                app:hintEnabled="false">
+
+                <com.santalu.maskara.widget.MaskEditText
+                    android:id="@+id/editText"
+                    style="@style/TextInputLayoutStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_plate_border"
+                    android:gravity="center"
+                    android:hint="@string/hint"
+                    android:inputType="textCapCharacters"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/grey_text"
+                    android:textSize="24sp"
+                    app:mask="###-####" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:id="@+id/errorLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editTextLayout"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_error"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_exclamation" />
+
+                <TextView
+                    android:id="@+id/errorText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:textColor="@color/pink"
+                    android:textSize="18sp"
+                    tools:text="Parâmetro de placa ausente" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/buttonOne"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_below="@+id/errorLayout"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_background_purple"
+                android:textColor="@drawable/button_text_white"
+                android:textSize="16sp"
+                tools:text="PAGAMENTO" />
+
+            <Button
+                android:id="@+id/buttonExit"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_below="@+id/buttonOne"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_background_border_purple"
+                android:text="@string/exit"
+                android:textColor="@drawable/button_text_purple"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/historic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/buttonExit"
+                android:paddingTop="25dp"
+                android:paddingBottom="12dp"
+                android:text="@string/view_historic"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@drawable/button_text_blue"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/imageLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tab_layout"
+            android:padding="60dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_loading" />
+
+            <TextView
+                android:id="@+id/textImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image"
+                android:layout_marginTop="20dp"
+                android:text="@string/registering"
+                android:textAlignment="center"
+                android:textColor="@color/grey_dark"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</layout>

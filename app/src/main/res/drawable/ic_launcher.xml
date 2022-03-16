@@ -1,0 +1,38 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="500dp"
+    android:height="500dp"
+    android:viewportWidth="500"
+    android:viewportHeight="500">
+  <path
+      android:pathData="M329.564,178.054C327.779,176.172 324.667,176.169 322.8,177.975L316.182,184.377C314.411,186.09 314.432,188.8 316.116,190.593C332.246,207.763 340.311,229.538 340.31,251.314C340.31,273.087 332.245,294.859 316.116,312.027C314.432,313.82 314.411,316.53 316.182,318.243L322.8,324.645C324.667,326.451 327.779,326.447 329.565,324.566C349.171,303.903 358.974,277.604 358.973,251.304C358.971,225.009 349.168,198.714 329.564,178.054Z"
+      android:strokeLineJoin="miter"
+      android:strokeWidth="5.45"
+      android:fillColor="#FFFFFF"
+      android:fillType="nonZero"
+      android:strokeColor="#00000000"
+      android:strokeLineCap="butt"/>
+  <path
+      android:pathData="M159.69,251.307C159.69,229.534 167.755,207.761 183.883,190.593C185.568,188.8 185.589,186.09 183.818,184.377L177.2,177.975C175.333,176.169 172.221,176.172 170.435,178.054C150.83,198.716 141.027,225.014 141.028,251.312C141.028,277.609 150.831,303.905 170.435,324.566C172.22,326.447 175.333,326.451 177.2,324.645L183.818,318.243C185.589,316.53 185.568,313.819 183.883,312.026C167.754,294.857 159.689,273.082 159.69,251.307Z"
+      android:strokeLineJoin="miter"
+      android:strokeWidth="5.45"
+      android:fillColor="#FFFFFF"
+      android:fillType="nonZero"
+      android:strokeColor="#00000000"
+      android:strokeLineCap="butt"/>
+  <path
+      android:pathData="M169.55,250.02C169.55,205.29 206.224,168.904 251.3,168.904C296.375,168.904 333.05,205.29 333.05,250.02C333.05,294.75 296.375,331.136 251.3,331.136C206.224,331.136 169.55,294.75 169.55,250.02ZM242.163,259.033L255.788,259.033C268.309,259.033 278.496,248.929 278.496,236.501C278.496,224.073 268.309,213.969 255.788,213.968L237.621,213.968C235.111,213.968 233.08,215.984 233.08,218.475L233.08,281.565C233.08,284.056 235.111,286.072 237.621,286.072C240.132,286.072 242.163,284.056 242.163,281.565L242.163,259.033Z"
+      android:strokeLineJoin="miter"
+      android:strokeWidth="5.45"
+      android:fillColor="#FFFFFF"
+      android:fillType="evenOdd"
+      android:strokeColor="#00000000"
+      android:strokeLineCap="butt"/>
+  <path
+      android:pathData="M256.483,222.982L242.209,222.982L242.209,248.733L256.483,248.733C264.354,248.733 270.756,242.957 270.756,235.857C270.756,228.757 264.354,222.982 256.483,222.982Z"
+      android:strokeLineJoin="miter"
+      android:strokeWidth="5.45"
+      android:fillColor="#FFFFFF"
+      android:fillType="nonZero"
+      android:strokeColor="#00000000"
+      android:strokeLineCap="butt"/>
+</vector>

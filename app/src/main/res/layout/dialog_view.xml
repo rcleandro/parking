@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/bg_dialog"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/questionLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textDialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/grey_dark"
+            android:textSize="20sp"
+            tools:text="Confima o pagamento da placa abaixo?" />
+
+        <TextView
+            android:id="@+id/plateDialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textDialog"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="38sp"
+            tools:text="ABC-1234" />
+
+        <Button
+            android:id="@+id/buttonOneDialog"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@+id/plateDialog"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_background_purple"
+            android:textColor="@drawable/button_text_white"
+            android:textSize="16sp"
+            tools:text="Confirmar" />
+
+        <TextView
+            android:id="@+id/buttonBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buttonOneDialog"
+            android:padding="25dp"
+            android:text="@string/back"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@drawable/button_text_blue"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/imageLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_loading" />
+
+        <TextView
+            android:id="@+id/textImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:textColor="@color/grey_dark"
+            android:textSize="20sp"
+            tools:text="Confirmando…" />
+
+    </RelativeLayout>
+
+</LinearLayout>
